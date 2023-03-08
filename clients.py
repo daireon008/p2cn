@@ -78,7 +78,7 @@ def main(network_ip):
 	data = s.recv(1024).decode()
 	print(data)
 	
-	# Send files in your shared folder to the index server
+	# Send files in your shared folder to the centralized directory server
 	files=list_files()
 	s.sendall(files.encode())
 	print(files)

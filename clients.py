@@ -48,7 +48,7 @@ def server_thread():
 	# the server thread responsible for sharing files
 	server_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM,0)
 	host= inet_addr() # getting the ip address of the client acting as the server
-	port=1235 #assigning a port to it
+	port=1234 #assigning a port to it
 	server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 	server_socket.bind((host,port))
 	print("Waiting for connection..."+str(host))

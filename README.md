@@ -11,4 +11,4 @@ Note: At most 2 connections can be maintained in this network.
 
 # P2P File-Sharing Functionality using a Centralized Directory Server - 
 1. First check `clients.py` and see if the ifconfig command is valid for your PC (if not valid the code would have to be changed).
-2. Run the centralized directory server first by typing `python3 centralized
+2. Run the centralized directory server first by typing `python3 centralized_directory_server`

@@ -6,8 +6,8 @@ import threading
 
 def inet_addr():
 	# To get the ip address of the client
-	os.system("ifconfig ens33 | grep inet > ip.txt")     # Using ifconfig to get the ip address of the client - using system call (e)     
-	f=open("ip.txt",'r')								 # storing the output of the ifcofig command and using it to find the ip address
+	os.system("ifconfig ens33 | grep inet > ip.txt")     # Using ifconfig to get the ip address of the client - using system call (e) - this should change for different pcs/os     
+	f=open("ip.txt",'r')				     # storing the output of the ifcofig command and using it to find the ip address
 	my_host=f.read().lstrip().split(' ')[1]              # the first entry 'inet' corresponds to the ip address of the client   
 	f.close()
 	os.system("rm ip.txt")
